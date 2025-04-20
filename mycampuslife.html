@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTHM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh; /* Full viewport height */
+        }
+
+
+        .logo {
+           width: 80px;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Distribute links evenly */
+            /* background-color: aqua; */
+            min-height: 50px;
+            align-items: center;
+            background-color: beige;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: large;
+            text-align: center; /* Center the links within their grid cells */
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Distribute links evenly */
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+
+        .body_area {
+            display: flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            color: darkblue;
+            width: 100%;
+            padding: 15px; /* Add some padding inside the body area */
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: beige;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            margin-top: 10px;
+            color: darkblue;
+        }
+
+
+        body {
+            /* background-color: beige; */
+            background-image: url('website-html-code-browser-view-printed-white-paper-closeup-view.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navigation">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/UTHM_Logo.png" alt="" style="width: 80px; margin: 10px;">
+           <a href="index.html">Home</a>
+           <a href="biodata.html">Biodata</a>
+           <a href="hobbies.html">Hobbies</a>
+           <a href="mycampuslife.html">My Campus Life</a>
+
+        </div>
+
+        <div class="content">
+            <div class="body_area">
+                <h1 style="color: brown; text-align: center;">A Journey at UTHM Parit Raja</h1>
+                <br>
+                <p>
+                    It’s been two exciting years at UTHM Parit Raja, and campus life has been nothing short of vibrant. From colorful cultural festivals to thrilling fun runs, every semester brings something new to look forward to. The energy during events like Karnival UTHM, food fairs, and student club showcases turns the whole campus into a lively celebration of diversity and creativity.
+                    
+                    Joining in marathons and night runs not only boosted my fitness but also brought new friendships and unforgettable memories. The cheers, the music, and the team spirit – it’s more than just running; it’s a bonding experience.
+                    
+                    Every event, big or small, adds color to the student life here. These two years have taught me that learning doesn’t just happen in lecture halls – it happens in the laughter shared at a booth, the teamwork during a club project, and the adrenaline rush at the finish line.
+                    
+                </p>
+              
+            </div>
+        </div>
+
+        <div class="footer" >
+            &copy MuhammadSyafi'e
+        </div>
+
+    </div>
+</body>
+</html>
