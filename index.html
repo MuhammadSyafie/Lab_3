@@ -13,12 +13,10 @@
 
         .container {
             display: grid;
-            grid-template-columns: 1fr; /* Single column by default */
-            grid-template-rows: auto auto 1fr auto; /* Auto height for logo, nav, min 1fr for content, auto for footer */
-            min-height: 100vh;
-            width: 100%;
-            /* background-color: gray; */
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh; /* Full viewport height */
         }
+
 
         .logo {
            width: 80px;
@@ -42,33 +40,9 @@
 
         .content {
             display: grid;
-            grid-template-columns: 20% 1fr; /* Sidebar takes 20%, body takes the rest */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Distribute links evenly */
             /* background-color: red; */
             margin-top: 10px;
-            gap: 10px; /* Space between sidebar and body */
-        }
-
-        .side_bar {
-            display: flex;
-            flex-direction: column;
-            background-color: darkblue;
-            color: aliceblue;
-            padding: 15px; /* Add some padding inside the sidebar */
-        }
-
-        .side_bar a {
-            text-decoration: none;
-            color: aliceblue;
-            margin-bottom: 5px; /* Space between links */
-        }
-
-        .side_bar ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .side_bar li {
-            margin-top: 5px;
         }
 
         .body_area {
@@ -76,6 +50,7 @@
             flex-direction: column;
             background-color: darkblue;
             color: aliceblue;
+            width: 100%;
             padding: 15px; /* Add some padding inside the body area */
         }
 
@@ -85,10 +60,11 @@
             background-color: darkblue;
             align-items: center;
             justify-content: center;
+            height: 100px;
             margin-top: 10px;
-            min-height: 50px;
             color: aliceblue;
         }
+
 
         body {
             /* background-color: beige; */
@@ -112,147 +88,6 @@
         </div>
 
         <div class="content">
-            <div class="side_bar">
-                <table border="">
-                    <tr>
-                        <td>Name</td>
-                        <td>Muhammad Syafi'e Bin Mohamad Harif</td>
-                        <td><img src="https://community.uthm.edu.my/images/students/20242025/CI240025.jpg" alt="" width="100"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Date of birth
-                        </td>
-                        <td colspan="2">
-                            24/9/2002
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Religion
-                        </td>
-                        <td colspan="2">
-                            Muslim
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Race
-                        </td>
-                        <td colspan="2">
-                            Malay
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5">
-                            Address
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Street
-                        </td>
-                        <td>
-                            No 21, Lorong Pelindung Damai.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Town
-                        </td>
-                        <td>
-                            Kuantan
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            District
-                        </td>
-                        <td>
-                            Kuantan
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            State
-                        </td>
-                        <td>
-                            Pahang
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">
-                            Contact
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Mobile Phone
-                        </td>
-                        <td>
-                            011-1189-2492
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Social Media
-                        </td>
-                        <td>
-                            <a href="https://www.instagram.com/muhdsyafieee?igsh=bmowdjdxZDNjcDZ5&utm_source=qr">Instagram</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Website
-                        </td>
-                        <td>
-                            <a href="https://smap.uthm.edu.my/">Smap</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Course and Institution
-                        </td>
-                        <td colspan="2">
-                            Banchelor of Information Technology, University Tun Hussein Onn Malaysia
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Programming Skills</td>
-                        <td colspan="2">
-                            <ul>
-                                <li>
-                                    HTML
-                                </li>
-                                <li>
-                                    CSS
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hobbies</td>
-                        <td colspan="2">
-                            <ul>
-                                <li>
-                                    Football
-                                </li>
-                                <li>
-                                    Fishing
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            2025 Wishlists
-                        </td>
-                        <td colspan="2">
-                            I will got 3.50 and above for this semester.
-                        </td>
-                    </tr>
-                </table>
-            </div>
             <div class="body_area">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eius provident neque quas libero iste in soluta quia, velit eaque delectus dolorum, omnis dolorem reprehenderit praesentium voluptate aspernatur quaerat. Labore vero cumque modi sit exercitationem, error dicta nulla, nobis blanditiis quibusdam consequatur ex saepe quam reiciendis et ipsam fugit reprehenderit assumenda temporibus sint molestiae sunt! Magni voluptates sunt nam, commodi animi impedit delectus dignissimos consectetur, maiores vel eaque fugit nesciunt! Optio doloribus fugit cumque vitae hic, vel quae minus provident accusamus neque. Exercitationem iure distinctio molestias similique ad aspernatur aut eos, veniam impedit quae ut quis vel tempora eum iusto officia libero porro voluptate enim. Earum, pariatur ipsa labore natus delectus quasi molestiae placeat deserunt unde! Ratione praesentium commodi quidem provident hic ipsum libero, nemo earum incidunt ab, vitae ducimus rem ullam laborum mollitia assumenda! Incidunt itaque dicta modi? Ullam, necessitatibus? Doloribus officiis ipsa, velit maxime tempora ab hic unde, voluptas aliquam qui quos praesentium, quibusdam voluptatem dignissimos possimus. Esse perspiciatis qui, sit facilis delectus culpa nulla reiciendis, corporis sapiente vero eaque cum quibusdam ex fugiat est. Soluta molestiae aut, debitis beatae corporis cumque fugit at explicabo quae consectetur, optio numquam neque, et commodi nobis porro doloremque quidem assumenda quas.
             </div>
