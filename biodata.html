@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTHM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh; /* Full viewport height */
+        }
+
+
+        .logo {
+           width: 80px;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Distribute links evenly */
+            /* background-color: aqua; */
+            min-height: 50px;
+            align-items: center;
+            background-color: beige;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: large;
+            text-align: center; /* Center the links within their grid cells */
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Distribute links evenly */
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+
+        .body_area {
+            display: flex;
+            flex-direction: column;
+            background-color: darkblue;
+            color: aliceblue;
+            width: 100%;
+            padding: 15px; /* Add some padding inside the body area */
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: beige;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            margin-top: 10px;
+            color: darkblue;
+        }
+
+
+        body {
+            /* background-color: beige; */
+            background-image: url('website-html-code-browser-view-printed-white-paper-closeup-view.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navigation">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/UTHM_Logo.png" alt="" style="width: 80px; margin: 10px;">
+           <a href="index.html">Home</a>
+           <a href="biodata.html">Biodata</a>
+           <a href="hobbies.html">Hobbies</a>
+
+        </div>
+
+        <div class="content">
+            <div class="body_area">
+                <table border="">
+                    <tr>
+                        <td>Name</td>
+                        <td>Muhammad Syafi'e Bin Mohamad Harif</td>
+                        <td><img src="https://community.uthm.edu.my/images/students/20242025/CI240025.jpg" alt="" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date of birth
+                        </td>
+                        <td colspan="2">
+                            24/9/2002
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Religion
+                        </td>
+                        <td colspan="2">
+                            Muslim
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Race
+                        </td>
+                        <td colspan="2">
+                            Malay
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">
+                            Address
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Street
+                        </td>
+                        <td>
+                            No 21, Lorong Pelindung Damai.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Town
+                        </td>
+                        <td>
+                            Kuantan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            District
+                        </td>
+                        <td>
+                            Kuantan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State
+                        </td>
+                        <td>
+                            Pahang
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            Contact
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mobile Phone
+                        </td>
+                        <td>
+                            011-1189-2492
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Social Media
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/muhdsyafieee?igsh=bmowdjdxZDNjcDZ5&utm_source=qr">Instagram</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Website
+                        </td>
+                        <td>
+                            <a href="https://smap.uthm.edu.my/">Smap</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Course and Institution
+                        </td>
+                        <td colspan="2">
+                            Banchelor of Information Technology, University Tun Hussein Onn Malaysia
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming Skills</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>
+                                    HTML
+                                </li>
+                                <li>
+                                    CSS
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>
+                                    Football
+                                </li>
+                                <li>
+                                    Fishing
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2025 Wishlists
+                        </td>
+                        <td colspan="2">
+                            I will got 3.50 and above for this semester.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer" >
+            &copy Ariffin 2025
+        </div>
+
+    </div>
+</body>
+</html>
